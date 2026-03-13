@@ -158,3 +158,168 @@ margin-top:30px;
 display:block;
 
 }
+.login-container{
+max-width:400px;
+margin:100px auto;
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+text-align:center;
+color:white;
+}
+
+.login-container input{
+width:100%;
+padding:12px;
+margin:15px 0;
+border:none;
+border-radius:10px;
+}
+
+.login-container button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ffd369;
+cursor:pointer;
+transition:0.3s;
+font-weight:600;
+}
+
+.login-container button:hover{
+transform:scale(1.05);
+}
+.members-section{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-top:30px;
+}
+
+.members-section button{
+padding:8px 15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+margin-right:10px;
+background:#2a5298;
+color:white;
+transition:0.3s;
+}
+
+.members-section button:hover{
+transform:scale(1.05);
+}
+.contributions-section{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-top:30px;
+}
+
+.contributions-section table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.contributions-section th, .contributions-section td{
+padding:12px;
+text-align:left;
+border-bottom:1px solid #eee;
+}
+
+.contributions-section th{
+color:#666;
+}
+.loans-section{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+.loans-section h2{
+    margin-bottom: 20px;
+    color: #2a5298;
+}
+
+.loans-section table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.loans-section th, .loans-section td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.loans-section th{
+    color: #666;
+    font-weight: 600;
+}
+
+.loans-section td button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* Approve Button */
+.loans-section td button.approve{
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.loans-section td button.approve:hover{
+    transform: scale(1.05);
+}
+
+/* Reject Button */
+.loans-section td button.reject{
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.loans-section td button.reject:hover{
+    transform: scale(1.05);
+}
+
+/* Responsive for Mobile */
+@media(max-width: 768px){
+    .loans-section table, .loans-section thead, .loans-section tbody, .loans-section th, .loans-section td, .loans-section tr{
+        display: block;
+    }
+
+    .loans-section tr{
+        margin-bottom: 15px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .loans-section td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .loans-section td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: 600;
+        text-align: left;
+        color: #666;
+    }
+}
