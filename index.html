@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chama Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar" id="sidebar">
+
+<h2>Chama+</h2>
+
+<ul>
+
+<li>Dashboard</li>
+<li>Members</li>
+<li>Contributions</li>
+<li>Loans</li>
+<li>Reports</li>
+<li>Settings</li>
+
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="topbar">
+
+<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<h3>Dashboard</h3>
+
+<div class="profile">Alex</div>
+
+</header>
+
+<!-- CARDS -->
+
+<section class="cards">
+
+<div class="card">
+
+<h4>Total Savings</h4>
+<h2>KES 1.2M</h2>
+
+</div>
+
+<div class="card">
+
+<h4>Members</h4>
+<h2>42</h2>
+
+</div>
+
+<div class="card">
+
+<h4>Loans Issued</h4>
+<h2>KES 530K</h2>
+
+</div>
+
+<div class="card">
+
+<h4>Pending Loans</h4>
+<h2>6</h2>
+
+</div>
+
+</section>
+
+<!-- CHART -->
+
+<section class="chart-container">
+
+<h3>Monthly Contributions</h3>
+
+<canvas id="contributionChart"></canvas>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
